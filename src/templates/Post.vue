@@ -12,7 +12,7 @@ query Post ($path: String!) {
   post: post (path: $path) {
     title
     content
-    date
+    date (format: "D MMMM, YYYY")
   }
 }
 </page-query>
