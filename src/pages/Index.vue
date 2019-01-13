@@ -2,9 +2,9 @@
   <Layout>
     
     
-    <p v-for="post in $page.posts.edges">
-      <g-link :to="post.node.path" class="links">
-        <h3>{{ post.node.title }}</h3>
+    <p v-for="{ node } in $page.allPost.edges" :key="node._id">
+      <g-link :to="node.path" class="links">
+        <h3>{{ node.title }}</h3>
       </g-link>
     </p>
 
@@ -14,11 +14,13 @@
 
 <page-query>
 query Posts {
-  posts: allPost {
+  allPost {
     edges {
       node {
+        _id
         title
         path
+        
       }
     }
   }
