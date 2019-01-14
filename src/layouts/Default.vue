@@ -37,7 +37,10 @@ body {
   text-decoration: none;
 }
 
-
+a, a:visited{
+  text-decoration: none;
+  color: #551A8B;
+}
 .layout {
   
   margin: 0 auto;

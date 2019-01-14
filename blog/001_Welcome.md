@@ -1,5 +1,6 @@
 ---
-title: Welcome
+title: Welcome to my Blog
+date: 2019-1-12 09:42:34
 ---
 
 # Welcome to my first blog

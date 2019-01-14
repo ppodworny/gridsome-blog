@@ -1,6 +1,7 @@
 <template>
   <Layout>
     
+    <p> List of articles: </p>
     
     <p v-for="{ node } in $page.allPost.edges" :key="node._id">
       <router-link :to="node.path" class="links">
