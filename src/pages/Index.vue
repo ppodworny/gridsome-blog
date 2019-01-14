@@ -3,9 +3,9 @@
     
     
     <p v-for="{ node } in $page.allPost.edges" :key="node._id">
-      <g-link :to="node.path" class="links">
+      <router-link :to="node.path" class="links">
         <h3>{{ node.title }}</h3>
-      </g-link>
+      </router-link>
     </p>
 
   </Layout>
